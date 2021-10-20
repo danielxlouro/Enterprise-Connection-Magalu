@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 16px;
+  display: flex;
+}
+
+body {
+  background: #5c079c;
+}
+
+.caixa_superior {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  align-items: center;
+  gap: 1em;
+}
+
+.caixa_superior h1 {
+  flex: 1;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+.locais-lista {
+  display: grid;
+  gap: 25px;
+}
+
+.locais {
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+  background-color: rgb(243, 229, 229);
+}
+
+.imagem {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+.locais p {
+  padding: 20px;
+}
+
+.locais a {
+  margin: 0 20px 20px;
+  display: block;
+  background-color: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #5c079c;
+  border: 1px solid #5c079c;
+  text-decoration: none;
+  text-align: center;
+}
+.locais a:hover {
+  background-color: #5c079c;
+  color: white;
+}
+
+.locais-imagem {
+  position: relative;
+}
+
+.locais-imagem h2 {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0px -2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.rodape {
+  font-weight: 400;
+  padding: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.formulario {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.itens_formulario {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.botao_envio {
+  background: white;
+  border: 1px solid purple;
+  padding: 0.5em 1em;
+  color: purple;
+  border-radius: 10px;
+}
+
+.botao_envio:hover {
+  background-color: #5c079c;
+  color: white;
+  cursor: pointer;
+}
+
+.rodape h2 {
+  color: #5c079c;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #5c079c;
+}
+
+label input {
+  display: block;
+  color: #5c079c;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.5em;
+}
+
+.midias img {
+  width: 30px;
+  height: 30px;
+}
+
+.midias {
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .locais-lista {
+    grid-template-columns: 1fr 1fr;
+  }
+  .locais a {
+    display: inline-block;
+  }
+  .itens_formulario {
+    flex-direction: row;
+  }
+}
